@@ -11,7 +11,7 @@ data = pd.read_csv(HERE / "requests.csv")
 X = data[["request_id", "task_type"]]
 # 분석하고자 하는 데이터 input_chars, task_type을 넣어준다
 # TODO B01-2: 정답 열 failed를 선택하세요. 0은 성공, 1은 실패입니다.
-y = data["input_chars"]
+y = data["failed"]
 # 정답 열 y 축을 failed로 선택합니다. 성공은 0, 1은 실패입니다. 
 print("입력 열:", X.columns.tolist())
 print("X 모양:", X.shape)
